@@ -6,12 +6,15 @@ from selenium.webdriver.support import expected_conditions as EC
 
 BASE_URL = "https://gitflic.ru/"
 
+SESSION_1 = os.environ["NGYzNzQyMDgtZTZkYS00NjRlLTkzMjItNDJlYmY4Mzk2YTNl"]
+SESSION_2 = os.environ["NTJmN2YwOGItYjk0OC00YzE1LTg2YzEtMTBlZTUxYjU5MmM5"]
+
 USER1 = {
-    "cookie": {"name": "SESSION", "value": os.environ["NGYzNzQyMDgtZTZkYS00NjRlLTkzMjItNDJlYmY4Mzk2YTNl"]},
+    "cookie": {"name": "SESSION", "value": SESSION_1},
     "profile_url": "https://gitflic.ru/user/lacosta1394",
 }
 USER2 = {
-    "cookie": {"name": "SESSION", "value": os.environ["NTJmN2YwOGItYjk0OC00YzE1LTg2YzEtMTBlZTUxYjU5MmM5"]},
+    "cookie": {"name": "SESSION", "value": SESSION_2},
     "profile_url": "https://gitflic.ru/user/chelik1995",
 }
 
